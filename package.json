@@ -6,14 +6,16 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
     "@testing-library/user-event": "^13.2.1",
+    "@types/color-convert": "^2.0.0",
     "@types/jest": "^27.0.1",
     "@types/node": "^16.7.13",
-    "@types/react": "^17.0.20",
-    "@types/react-dom": "^17.0.9",
+    "@types/react": "^17.0.38",
+    "@types/react-dom": "^17.0.11",
     "husky": "^7.0.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",
+    "styled-components": "^5.3.3",
     "typescript": "^4.4.2",
     "web-vitals": "^2.1.0"
   },
@@ -22,13 +24,38 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prepare": "husky install"
+    "lint": "eslint ./",
+    "lint:fix": "yarn lint --fix",
+    "prepare": "husky install",
+    "lint-staged": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "yarn lint:fix",
+      "cross-env CI=true yarn test --findRelatedTests",
+      "git add"
+    ],
+    "*.ts": [
+      "yarn lint:fix",
+      "cross-env CI=true yarn test --findRelatedTests",
+      "git add"
+    ],
+    "*.tsx": [
+      "yarn lint:fix",
+      "cross-env CI=true yarn test --findRelatedTests",
+      "git add"
+    ]
   },
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "ng lint"
+    }
   },
   "browserslist": {
     "production": [
@@ -45,6 +72,8 @@
   "devDependencies": {
     "@commitlint/cli": "^16.1.0",
     "@commitlint/config-conventional": "^16.0.0",
+    "@types/react-helmet": "^6.1.5",
+    "@types/styled-components": "^5.1.21",
     "@typescript-eslint/eslint-plugin": "^5.10.2",
     "@typescript-eslint/parser": "^5.10.2",
     "eslint": "^8.8.0",
@@ -56,6 +85,9 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
-    "prettier": "^2.5.1"
+    "lint-staged": "^12.3.3",
+    "prettier": "^2.5.1",
+    "react-helmet": "^6.1.0",
+    "webpack": "^5.68.0"
   }
 }

@@ -1,7 +1,7 @@
 # Pokedex
 
 <center>
-    <img src="git_src/pokedex-logo.png" />
+    <img src="git-files/pokedex-logo.png" />
 </center>
 
 ## 📃 About
@@ -22,9 +22,7 @@
 
 ## 🚀 Installing
 
-<hr>
-
-### Available Scripts
+### `yarn`
 
 In the project directory, you can run:
 

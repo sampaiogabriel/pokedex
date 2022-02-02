@@ -6,7 +6,7 @@ This project was developed so that I can apply the knowledge acquired from React
 
 
 
-# Technologies and Install
+# ⛏️ Technologies and Install
 
 ## - <strong>React</strong>
 
@@ -86,4 +86,46 @@ and, prepare... (link <a href="https://github.com/typicode/husky">here</a>)
 // 
 
 commit default :
-<code> git commit -m "..." -no-verify </code>
+<code> git commit -m "..." --no-verify </code>
+
+example commit :
+<code> type(scope?): subject </code>
+
+    Types:
+        - build
+        - chore
+        - ci
+        - docs
+        - feat
+        - fix
+        - perf
+        - refactor
+        - revert
+        - style
+        - test
+
+<hr>
+
+## - <strong> Lint Staged </strong>
+
+‼️ <i> More infos <a href="https://github.com/okonet/lint-staged">here</a> </i>
+
+<code> yarn add -D lint-staged </code>
+
+<hr>
+
+## - <strong> Styled Components </strong>
+
+‼️ <i> Styled for components </i>
+
+<code>yarn add styled-components</code>
+
+//
+
+<code>yarn add @types/styled-components -D</code>
+
+<hr>
+
+## - <strong> Storybook </strong>
+
+<code> npx sb init </code>
