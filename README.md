@@ -6,17 +6,26 @@
 
 ## 📃 About
 
+v1
+
 <hr>
 
 ## 📚 Requirements
+
+Node
 
 <hr>
 
 ## ⛏️ Technologies
 
+Javascript
+React
+
 <hr>
 
 ## ⛏️ API
+
+Link: https://pokeapi.co/
 
 <hr>
 
@@ -63,6 +72,6 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ## ✍️ Author
 
-Made by <a href="https://www.linkedin.com/in/gabrielsampaiolimadearaujo/"> Gabriel Sampaio </a> 
+Made by <a href="https://www.linkedin.com/in/gabrielsampaiolimadearaujo/"> Gabriel Sampaio </a>
 
 To contribute, <a href="https://docs.github.com/en/get-started/quickstart/contributing-to-projects"> fork! </a>
